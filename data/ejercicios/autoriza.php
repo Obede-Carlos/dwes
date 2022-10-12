@@ -9,6 +9,7 @@
     <h1>Pagina de chequeo de credenciales: </h1>
     <h2>Si has llegado hasta aqui eres un heroe.</h2>
     <?php
+        //recogida de lineas de texto.
         if (isset($_GET['envio'])) {
             if (!empty($_GET['usuario'])) {
                 $usuario = $_GET['usuario'];
@@ -37,7 +38,7 @@
         }
 
 
-        //recogida valores radiobutton
+        //recogida valores radiobutton.
         if (isset($_GET['envio'])){
             if (!empty($_GET['equipo'])) {
                 $equipos = $_GET['equipo'];
@@ -47,6 +48,7 @@
             }
         }
 
+        //recogida listas simples.
         if (isset($_GET['envio'])){
             if (!empty($_GET['menus'])) {
                 $plato = $_GET['menus'];
@@ -56,6 +58,7 @@
             }
         }
 
+        //recogida listas complejas.
         if (isset($_GET['envio'])){
             if (!empty($_GET['menum'])) {
                 $menus = $_GET['menum'];
@@ -64,6 +67,15 @@
                 } 
             } else {
                 echo "<br>No has elegido ningun plato.";
+            }
+        }
+        //recogida direccion ip.
+        if (isset($_GET['envio'])){
+            if (!empty($_GET['ip'])) {
+                $ip = $_GET['ip'];
+                echo "<br> la ip del servidor es : ". $ip; 
+            } else {
+                echo "<br>No hay ninguna ip seleccionada.";
             }
         }
     ?>
