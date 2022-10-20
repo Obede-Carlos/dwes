@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario para ficha de datos:</h1>
+    <form action="ejercicio01.php" method="get">
+        <p>
+            <label for="nombre">Introduce tu nombre:</label>
+            <input type="text" name="nombre" id="nombre">
+        </p>
+        <p>
+            <label for="apellidos">Introduce tus apellidos</label>
+            <input type="text" name="apellidos" id="apellidos">
+        </p>
+        <p>
+            <label for="edad">Introduce tu edad</label>
+            <input type="number" name="edad" id="edad">
+        </p>
+        <p>
+            <label for="telefono">Intoduce tu telefono:</label>
+            <input type="tel" name="telefono" id="telefono">
+        </p>
+        <p>
+            <label for="correo">Introduce tu email</label>
+            <input type="email" name="correo" id="correo">
+        </p>
+
+        <p> 
+            <label for="sexo1">Masculino</label>
+            <input type="radio" name="sexo" id="sexo1" value="Femenino" >
+            <label for="sexo2">Femenino</label>
+            <input type="radio" name="sexo" id="sexo2" value="Masculino">
+        </p>
+
+        <input type="submit" name="envio" value="Enviar">
+    </form>
+</body>
+</html>
