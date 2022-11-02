@@ -1,0 +1,10 @@
+Lista deseos:
+
+deseos.php => desplegable : vaqueros
+                             telefono movil
+                             coche
+                             collar 
+                             cd
+Se van mostrando en la misma pagina lo elegido.
+    -> sesiones, codificado json.
+        -> recuperar de la informacion del json codificado.
