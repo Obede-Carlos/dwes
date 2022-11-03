@@ -4,6 +4,4 @@ $array = array("Los Angeles Lakers", "Chicago Bulls", "Memphis Grizziles", "Miam
 
 $array[] = "Detroit Pistons";
 
-echo $array;
-print_r($array);
-var_dump($array);
+echo "<ul><li>$array</li></ul>";

@@ -14,4 +14,5 @@
         //borrar las cookies y redirigir al html
         setcookie("idioma","",time()-7200);
         setcookie("marca","",time()-7200);
+        header("Location: miniejercicio1.html");
     }
