@@ -1,11 +1,13 @@
 <?php
 
+//introducir los elementos de uno en uno al array.
 $array[] = "Los Angeles Lakers";
 $array[] =  "Chicago Bulls";
 $array[] = "Memphis Grizziles";
 $array[] = "Miami Heat";
 $array[] = "Detroit Pistons";
 
-echo $array;
-print_r($array);
-var_dump($array);
+//mostrarlo de manera que sea una lista de html.
+foreach($array as $i){
+    echo "<ul><li> " . $i . "<ul><li>";
+}

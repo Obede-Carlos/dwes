@@ -18,6 +18,7 @@ class app{
         }
     }
 
+    //funcion para calcular los factoriales es decir por cada numero el siguiente es el producto del anterior, ejemplo factorial 5 : 1 x 2 x 3 x 4 x 5.
     public function calcularFactoriales($n){
         if ($n < 1000000) {
             $factorial = 1;
@@ -28,15 +29,15 @@ class app{
         }
     }
 
+    //funcion que por cada numero hasta 10.000 compuebe con el metodo primo, si lo es lo muestra.
     public function calcularPrimos(){
         for ($i=0; $i < 10000; $i++) { 
             if (primo($i)) {
                 echo "EL numero: " . $i . "es primo";
-            } else {
-                echo "EL numero: " . $i . "no es primo";
-            }
+            } 
         }
 
+        //funcion primo que devuelve verdadero si el numero solo se puede dividir entre 1 y el mismo.
         function primo ($num){
             $cont = 0;
             for ($i=2; $i <= $num ; $i++) { 

@@ -1,5 +1,7 @@
 <?php
 
+//comprobacion de envio establecdio y nombre no vacio, muestra mensaje de hola,
+//sino muestra nombre obligatorio y link para volver atras.
 if (isset($_POST['envio'])) {
     if (!empty($_POST['nombre'])) {
         echo "Hola: " . $_POST['nombre'];

@@ -1,6 +1,7 @@
 <?php
 echo '<h1> Ficha de Datos';
 
+//comprobar que el campo nombre no esta vacio lo muestra y sino vuelve atras.
 if (isset($_GET['envio'])) {
     if (!empty($_GET['nombre'])) {
         $nombre = $_GET['nombre'];
@@ -10,6 +11,7 @@ if (isset($_GET['envio'])) {
     } 
 }
 
+//comprobar que el campo apellidos no esta vacio lo muestra y sino vuelve atras.
 if (isset($_GET['envio'])) {
     if (!empty($_GET['apellidos'])) {
         $apellido = $_GET['apellidos'];
@@ -19,6 +21,7 @@ if (isset($_GET['envio'])) {
     } 
 }
 
+//comprobar que el campo edad no esta vacio lo muestra y sino vuelve atras.
 if (isset($_GET['envio'])) {
     if (!empty($_GET['edad'])) {
         $edad = $_GET['edad'];
@@ -28,6 +31,7 @@ if (isset($_GET['envio'])) {
     } 
 }
 
+//comprobar que el campo telefono no esta vacio lo muestra y sino vuelve atras.
 if (isset($_GET['envio'])) {
     if (!empty($_GET['telefono'])) {
         $telf = $_GET['telefono'];
@@ -37,6 +41,7 @@ if (isset($_GET['envio'])) {
     } 
 }
 
+//comprobar que el campo sexo no esta vacio lo muestra y sino vuelve atras.
 if (isset($_GET['envio'])) {
     if (!empty($_GET['sexo'])) {
         $sexo = $_GET['sexo'];

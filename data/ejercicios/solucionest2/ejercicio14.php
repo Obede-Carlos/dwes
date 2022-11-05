@@ -1,29 +1,31 @@
 <?php
-        if($_SERVER["REQUEST_METHOD"] === "POST"){
-            if (!isset($_POST["calcular"])) {
-                if (empty($_POST["num1"]) && empty($_POST["num2"]) && empty($_POST["operador"])) {
-                    header("LOCATION: ejercicio14.php");
-                } else {
-                    $num1 = (int)$_POST["num1"];
-                    $num2 = (int)$_POST["num2"];
-                    $operador = $_POST["operador"];
+    //comprueba el metodo calcular y si los numeros y el operador estan vacios.
+    if($_SERVER["REQUEST_METHOD"] === "POST"){
+        if (!isset($_POST["calcular"])) {
+            if (empty($_POST["num1"]) && empty($_POST["num2"]) && empty($_POST["operador"])) {
+                header("LOCATION: ejercicio14.php");
+            } else {
+                $num1 = (int)$_POST["num1"];
+                $num2 = (int)$_POST["num2"];
+                $operador = $_POST["operador"];
 
-                    if ($operador == "suma") {
-                        echo $num1 . " + " . $num2 . " = " . $num1 + $num2;
-                    }
-                    if ($operador == "resta") {
-                        echo $num1 . " - " . $num2 . " = " . $num1 - $num2;
-                    }
-                    if ($operador == "producto") {
-                        echo $num1 . " * " . $num2 . " = " . $num1 * $num2;
-                    }
-                    if ($operaor == "division") {
-                        echo $num1 . " / " . $num2 . " = " . $num1 / $num2;
-                    }
+                //depende del operador hace suma resta multi o division.
+                if ($operador == "suma") {
+                    echo $num1 . " + " . $num2 . " = " . $num1 + $num2;
+                }
+                if ($operador == "resta") {
+                    echo $num1 . " - " . $num2 . " = " . $num1 - $num2;
+                }
+                if ($operador == "producto") {
+                    echo $num1 . " * " . $num2 . " = " . $num1 * $num2;
+                }
+                if ($operaor == "division") {
+                    echo $num1 . " / " . $num2 . " = " . $num1 / $num2;
                 }
             }
         }
-    ?>
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +34,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Formulario con dos campos y un desplegable a modo de calculadora.-->
     <form action="" method="post">
         <p>
             <label for="num1">Introduce el primer numero:</label>

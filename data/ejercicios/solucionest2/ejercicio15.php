@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Formulario con tres nombres usando el array nombres.-->
     <form action="" method="post">
         <p>
             <label>Introduce primer nombre:</label>
@@ -24,6 +25,7 @@
         <input type="submit" name="envio" id="envio" value="Enviar Datos">
     </form>
     <?php
+    //comprobadcion de envio y mostreo del array nombres.
         if (isset($_POST["envio"])) {
             var_dump($_POST["nombres"]);
         }

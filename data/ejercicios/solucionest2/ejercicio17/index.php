@@ -10,6 +10,7 @@
     <hr>
     <input type="text" name="opciones[]">
     <?php
+        //menu con echos y switch para elegir entre los distintos metodos.
         echo "eligue las siguientes opciones:";
         echo "<br>(1) Fibonacci";
         echo "<br>(2) Potencias2";
